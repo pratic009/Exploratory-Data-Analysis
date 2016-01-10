@@ -1,6 +1,6 @@
 data<- read.table("household_power_consumption.txt", sep=";", header=T, quote= "", strip.white=TRUE, stringsAsFactors = F, na.strings= "?")
 
-# Now Subsetting the full data to obtain the data related to two days: 
+# Now Subsetting the full data and trying to obtain the data related to two days: 
 data<- subset(data, (data$Date == "1/2/2007" | data$Date== "2/2/2007")) 
 
 # creating Plot1.png
